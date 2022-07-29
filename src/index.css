@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html, body, #root{
+    @apply h-full bg-zinc-50
+  }
+
+  .input-container{
+    @apply
+    block 
+    relative 
+    flex
+    bg-zinc-50 
+    border 
+    rounded-sm 
+    focus-within:border-gray-400 
+      
+  }
+
+  .login-input{
+    @apply  
+    w-full 
+    h-[38px]     
+    outline-none 
+    px-2 
+    text-xs 
+  }
+
+  .login-input-description{
+    @apply 
+    absolute 
+    top-1/2 
+    left-[9px] 
+    -translate-y-1/2 
+    text-xs
+    text-gray-500 
+    cursor-text 
+    pointer-events-none 
+    transition-all 
+  }
+
+  .login-button{
+    @apply
+    h-[30px] 
+    rounded 
+    bg-brand
+    text-white 
+    text-sm
+    font-medium
+    disabled:opacity-50    
+    mt-1
+  }
+}
